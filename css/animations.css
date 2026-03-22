@@ -1,0 +1,26 @@
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.grid-3 .reveal:nth-child(2) { transition-delay: 0.1s; }
+.grid-3 .reveal:nth-child(3) { transition-delay: 0.2s; }
+
+.steps .reveal:nth-child(2) { transition-delay: 0.1s; }
+.steps .reveal:nth-child(3) { transition-delay: 0.2s; }
+.steps .reveal:nth-child(4) { transition-delay: 0.3s; }
+
+.problem-card.reveal:nth-child(2) { transition-delay: 0.08s; }
+.problem-card.reveal:nth-child(3) { transition-delay: 0.16s; }
+.problem-card.reveal:nth-child(4) { transition-delay: 0.24s; }

@@ -1,0 +1,140 @@
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* Logo */
+.nav__logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nav__logo-name {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.nav__logo-sub {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-top: 2px;
+}
+
+/* Links */
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition-fast);
+  letter-spacing: 0.2px;
+}
+
+.nav__link:hover {
+  color: var(--white);
+}
+
+/* Nav CTA */
+.nav__cta {
+  font-size: 13px;
+  padding: 10px 24px;
+}
+
+/* Hamburger */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.nav__hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  transition: all var(--transition-fast);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav__hamburger {
+    display: flex;
+  }
+
+  .nav__links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background: var(--navy);
+    padding: var(--space-xl) var(--container-pad);
+    gap: var(--space-md);
+    transform: translateX(100%);
+    transition: transform var(--transition-med);
+  }
+
+  .nav__links.is-open {
+    transform: translateX(0);
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+
+  .nav__cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav__hamburger.is-open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav__hamburger.is-open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__hamburger.is-open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}

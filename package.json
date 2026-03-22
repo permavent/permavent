@@ -1,0 +1,10 @@
+{
+  "name": "permavent-property-protection",
+  "version": "1.0.0",
+  "description": "Perma-Vent Property Protection — Commercial Pest Exclusion Infrastructure Website",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site — no build step required'"
+  },
+  "private": true
+}

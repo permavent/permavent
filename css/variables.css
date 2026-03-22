@@ -1,0 +1,64 @@
+/* ============================================
+   PERMA-VENT PROPERTY PROTECTION
+   Design System Variables
+   ============================================ */
+
+:root {
+  /* Primary dark background */
+  --navy:       #0B1525;
+  --navy-mid:   #162035;
+  --navy-light: #243150;
+
+  /* Accent */
+  --amber:      #C8922A;
+  --amber-lt:   #E8B84B;
+  --amber-pale: #FBF0DC;
+
+  /* Light backgrounds */
+  --cream:      #F8F5F0;
+  --white:      #FFFFFF;
+
+  /* Text on light */
+  --ink:        #1A1A22;
+  --ink-mid:    #3D3D4A;
+  --ink-muted:  #737380;
+
+  /* Borders */
+  --border:     #E4DDD5;
+  --border-dk:  #D0C8BE;
+
+  /* Status */
+  --green-ok:   #2A7A4A;
+  --red-warn:   #C0392B;
+
+  /* Spacing scale */
+  --space-xs:   0.5rem;
+  --space-sm:   1rem;
+  --space-md:   1.5rem;
+  --space-lg:   2.5rem;
+  --space-xl:   4rem;
+  --space-2xl:  6rem;
+  --space-3xl:  8rem;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:  'DM Mono', 'Courier New', monospace;
+
+  /* Nav */
+  --nav-height: 68px;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-fast: 200ms var(--ease-out);
+  --transition-med:  350ms var(--ease-out);
+
+  /* Borders & Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Container */
+  --container-max: 1200px;
+  --container-pad: 1.5rem;
+}

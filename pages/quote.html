@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Portfolio Quote | Perma-Vent Property Protection</title>
+  <meta name="description" content="Request a per-unit pest exclusion quote for your multi-family property. 48-hour response. Serving Greater Orlando. Fully insured.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/sections.css">
+  <link rel="stylesheet" href="../css/animations.css">
+
+  <style>
+    /* Minimal nav for focused conversion */
+    .quote-page .nav__links .nav__link { display: none; }
+    @media (max-width: 768px) {
+      .quote-page .nav__hamburger { display: none; }
+    }
+  </style>
+</head>
+<body class="quote-page">
+
+  <!-- MINIMAL NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-name">Perma-Vent</span>
+        <span class="nav__logo-sub">Property Protection</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="../index.html#problem" class="nav__link">Why It Matters</a>
+        <a href="how-it-works.html" class="nav__link">How It Works</a>
+        <a href="warranty.html" class="nav__link">Warranty</a>
+      </div>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- QUOTE FORM -->
+  <section class="section" style="padding-top: calc(var(--nav-height) + var(--space-2xl));">
+    <div class="container" style="max-width: 860px;">
+      <div class="text-center mb-xl">
+        <span class="eyebrow">Request a Quote</span>
+        <h1>Get per-unit pricing for your portfolio.</h1>
+        <p style="color: var(--ink-mid); max-width: 560px; margin: var(--space-sm) auto 0;">
+          Fill out the form below with your property details. You will receive a per-unit quote within 48 hours. No site visit required for the initial estimate.
+        </p>
+      </div>
+
+      <div class="form-card">
+        <form id="quoteForm" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Company / Property Management Co.</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="unitCount">Approximate Unit Count</label>
+              <select id="unitCount" name="unitCount" required>
+                <option value="" disabled selected>Select unit count</option>
+                <option value="under-50">Under 50</option>
+                <option value="50-100">50&ndash;100</option>
+                <option value="100-250">100&ndash;250</option>
+                <option value="250-500">250&ndash;500</option>
+                <option value="500+">500+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="propertyType">Property Type</label>
+              <select id="propertyType" name="propertyType" required>
+                <option value="" disabled selected>Select property type</option>
+                <option value="apartment">Apartment complex</option>
+                <option value="townhomes">Townhomes / Condos</option>
+                <option value="hoa">HOA community</option>
+                <option value="mixed">Mixed portfolio</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Anything else we should know?</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            Request Quote &mdash; 48hr Response
+          </button>
+        </form>
+      </div>
+
+      <!-- WHAT HAPPENS NEXT -->
+      <div class="mt-xl">
+        <h3 class="text-center mb-lg">What happens after you submit.</h3>
+        <div class="grid-3">
+          <div class="card text-center">
+            <div class="step__number" style="margin: 0 auto var(--space-sm);">1</div>
+            <h4 style="font-family: var(--font-sans); font-size: 15px; font-weight: 600; margin-bottom: 0.5rem;">Confirmation email</h4>
+            <p style="font-size: 14px; color: var(--ink-mid);">You receive an email confirming we have your property details and quote request.</p>
+          </div>
+          <div class="card text-center">
+            <div class="step__number" style="margin: 0 auto var(--space-sm);">2</div>
+            <h4 style="font-family: var(--font-sans); font-size: 15px; font-weight: 600; margin-bottom: 0.5rem;">Quote within 48 hours</h4>
+            <p style="font-size: 14px; color: var(--ink-mid);">We review your property details and send a per-unit quote within two business days.</p>
+          </div>
+          <div class="card text-center">
+            <div class="step__number" style="margin: 0 auto var(--space-sm);">3</div>
+            <h4 style="font-family: var(--font-sans); font-size: 15px; font-weight: 600; margin-bottom: 0.5rem;">Schedule a call</h4>
+            <p style="font-size: 14px; color: var(--ink-mid);">If you want to discuss the quote, we schedule a brief call to answer any questions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRUST ELEMENTS -->
+      <div class="mt-xl" style="border-top: 1px solid var(--border); padding-top: var(--space-lg);">
+        <div class="trust-bar__inner">
+          <div class="trust-item">
+            <span class="trust-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            Fully Insured, $1M+ Liability
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </span>
+            Critter Quitter Authorized Installer
+          </div>
+          <div class="trust-item">
+            <span class="trust-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </span>
+            Certified Home Inspector Credential
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINIMAL FOOTER -->
+  <footer class="footer" style="padding: var(--space-lg) 0;">
+    <div class="container">
+      <div class="footer__bottom" style="border-top: none; padding-top: 0;">
+        <span>&copy; 2026 Perma-Vent Property Protection. All rights reserved.</span>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Insurance Certificate</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

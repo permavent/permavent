@@ -90,7 +90,7 @@
         successMsg.style.cssText =
           'text-align:center;color:var(--green-ok);font-weight:500;margin-top:1rem;font-size:14px;';
         successMsg.textContent =
-          'Thank you. We will send your per-unit quote within 48 hours.';
+          'Thank you. We will send your per-vent-stack quote within 48 hours.';
         quoteForm.appendChild(successMsg);
       }, 800);
     });
